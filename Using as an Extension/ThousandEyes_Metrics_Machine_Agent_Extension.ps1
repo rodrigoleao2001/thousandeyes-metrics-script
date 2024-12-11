@@ -35,7 +35,7 @@ $allAvailableMetrics = @(
 $selectedMetrics = @()
 
 # Define selected tests (leave empty to include all available tests)
-$selectedTests = @("Cnet") # Replace with your preferred test names or IDs
+$selectedTests = @() # Replace with your preferred test names or IDs
 
 # Define how many test results to retrieve (0 = retrieve all available results)
 $testResultsToRetrieve = 0

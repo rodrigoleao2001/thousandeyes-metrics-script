@@ -5,11 +5,11 @@ $aid = $Env:THOUSANDEYES_AID    # Define the environment variable for your Accou
 $endPointTestUrl = "https://api.thousandeyes.com/v7/endpoint/tests/scheduled-tests/http-server?aid=$aid"
 
 # Define metrics and test selection criteria
-$selectedTests = @("Cnet")     # Replace with your preferred test names or IDs
-$selectedMetrics = @("totalTime", "responseTime") # Replace with metrics you want to monitor
+$selectedTests = @()     # Replace with your preferred test names or IDs
+$selectedMetrics = @() # Replace with metrics you want to monitor
 
 # Define how many test results to retrieve (0 = retrieve all available results)
-$testResultsToRetrieve = 5
+$testResultsToRetrieve = 0
 
 # Default metrics if none are selected
 $allAvailableMetrics = @("totalTime", "responseTime", "dnsTime", "connectTime", "sslTime", "waitTime", "receiveTime", "wireSize")
